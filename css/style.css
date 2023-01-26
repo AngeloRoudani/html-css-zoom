@@ -97,7 +97,6 @@ a {
     background-color: rgb(56, 56, 56);
     color: white;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     position: fixed;
@@ -120,7 +119,6 @@ a {
 .icon {
     display: inline-block;
     padding-bottom: 20px;
-    align-self: flex-start;
     font-size: 10px;
     font-weight: 500;
 }
@@ -134,13 +132,33 @@ a {
     display: inline-block;
 }
 
+.last {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 25px;
+}
+
+
+.first {
+    padding-left: 20px;
+}
+
+.second:first-child .first {
+    padding-left: 40px;
+}
+
+.third {
+    padding-left: 25px;
+}
+
 .words {
     display: inline-block;
 }
 
 .icona {
     font-size: 20px;
-    padding: 5px 20px 0 20px ;
+    padding: 5px 25px 0 25px ;
 }
 
 .end_chat {
