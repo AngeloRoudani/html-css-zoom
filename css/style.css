@@ -15,13 +15,21 @@ body {
     position: relative;
 }
 
-head{
+/*head{
+    position: relative;
     position: fixed;
+    top: 0;
     z-index: 9;
-}
+}*/
 
 #high {
-    height: 40px;
+    position: relative;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 9;
+    width: 100%;
+    height: 80px;
     display: flex;
     justify-content: flex-end;
     
@@ -55,7 +63,7 @@ a {
 .window {
     display: inline-block;
     width: calc(100% / 8);
-    /*height: calc(100% / 5);*/
+    height: calc(100% / 5);
     background-image: url('https://picsum.photos/200/300');
     background-size: cover;
     background-repeat: no-repeat;
@@ -76,20 +84,40 @@ a {
 }
 
 .bottom_bar {
-    height: 10vh;
+    height: 80px;
     width: 100%;
-    background-color: rgb(56, 56, 56);
+    position: relative;
 }
 
 .down {
     width: 100%;
+    background-color: rgb(56, 56, 56);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    bottom: 0;
 
+}
+
+.video a {
+    display: inline-block;
 }
 
 .icona {
     font-size: 20px;
+    padding: 5px 15px 20px 15px ;
+}
+
+.end_chat {
+    display: inline-block;
+    color: red;
+    width: 5%;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    padding-top: 27px;
 }
